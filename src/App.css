@@ -1,0 +1,192 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+}
+
+li {
+    display: flex;
+    font-size: 1rem;
+    justify-content: space-between;
+    list-style: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+li:hover {
+    background: #333;
+    color: white;
+}
+
+li:hover .fa {
+    color: white;
+}
+
+.fa-file-code-o, .fa-clock-o {
+    padding-right: 4px;
+}
+
+.App {
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    width: 744px;
+    flex-wrap: wrap;
+}
+
+.week-short {
+    font-size: 0.7rem;
+    color: blue;
+}
+
+.week-date {
+    font-size: 0.9rem;
+    display: flex;
+    margin-left: 50px;
+}
+
+.toggle {
+    width: 180px;
+    position: absolute;
+    top: -30px;
+    left: 550px;
+}
+
+.square {
+    width: 106px;
+    height: 130px;
+    border: 1px solid #333;
+}
+
+.chip {
+    text-align: center;
+    margin-top: 3px;
+    display: flex;
+    justify-content: center;
+}
+
+.chip>*:hover span {
+    width: 100px;
+    cursor: pointer;
+}
+
+.chip:hover {
+    color: #333;
+}
+
+.days {
+    font-size: 1rem;
+    color: blue;
+    vertical-align: center;
+    line-height: 40px;
+    text-align: center;
+    width: 106px;
+    height: 40px;
+    border: 1px solid #333;
+}
+
+.date {
+    display: inline;
+    font-size: 1 rem;
+    color: blue;
+    margin-left: 3px;
+}
+
+.months {
+    margin: 10px;
+    text-align: center;
+    color: blue;
+    font-weight: bold;
+    font-size: 1 rem;
+}
+
+img {
+    height: 30px;
+    widows: 40px;
+    cursor: pointer;
+    color: red;
+}
+
+.lectors {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.lector {
+    margin-left: 1rem;
+}
+
+hr {
+    opacity: .3;
+    margin: 1rem;
+}
+
+.modal-info {
+    display: flex;
+    justify-content: space-around;
+}
+
+.resources>* {
+    width: 200px;
+}
+
+.relative {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.feedback, .resources {
+    width: 200px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    width: 50px;
+    cursor: pointer;
+    border: 0;
+}
+
+input:hover {
+    background: #333;
+    color: white;
+}
+
+.months-controllers {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.main .fa-chevron-left, .main .fa-chevron-right {
+    cursor: pointer;
+    color: #333;
+}
+
+.main .fa-chevron-left, .main .fa-chevron-right {
+    padding-top: 12px;
+}
+
+.toggle .fa-chevron-left, .toggle .fa-chevron-right {
+    padding-top: 16px;
+}
+
+.fa-chevron-left:hover, .fa-chevron-right:hover {
+    color: blue;
+}
+
+.example-appear {
+    opacity: 0.01;
+}
+
+.example-appear.example-appear-active {
+    opacity: 1;
+    transition: opacity .3s ease-in;
+}
